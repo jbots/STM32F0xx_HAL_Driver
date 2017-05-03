@@ -40,7 +40,7 @@
 #include "stm32f0xx_ll_system.h"
 #ifdef  USE_FULL_ASSERT
 #include "stm32_assert.h"
-#else
+#elif !defined(assert_param)
 #define assert_param(expr) ((void)0U)
 #endif
 
